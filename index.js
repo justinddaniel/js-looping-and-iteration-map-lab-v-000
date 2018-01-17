@@ -9,3 +9,8 @@ function nameToAttributes (array) {
     return {'firstName': namearray[0], 'lastName': namearray[1]};  });
   return newarray;
 }
+
+function attributesToPhrase (array) {
+  let newarray = array.map(function (element) {return `${element['name']} is from ${element['hometown']}`});
+  return newarray;
+}
